@@ -15,8 +15,8 @@ $("#login-form").on("submit", function (e) {
       },
       success: function (response) {
         console.log(response);
-        localStorage.setItem("userData", response);
-        console.log(localStorage.setItem("userData", response))
+        localStorage.setItem("userid", res.userid);
+        localStorage.setItem("username", res.username);
         window.location.href = "profile.html";
       },
     });
